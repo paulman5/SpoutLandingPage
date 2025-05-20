@@ -6,6 +6,7 @@ import { Button } from "@/components/button"
 export default function LandingPage() {
   return (
     <div className="flex min-h-screen flex-col bg-white text-gray-900">
+      {/* Header */}
       <header className="w-full py-6">
         <div className="container mx-auto max-w-[1400px] px-4 sm:px-6">
           <div className="flex items-center justify-between">
@@ -22,6 +23,7 @@ export default function LandingPage() {
       </header>
 
       <main className="flex-1">
+        {/* Hero Section */}
         <section className="w-full py-16 md:py-24">
           <div className="container mx-auto max-w-[1400px] px-4 sm:px-6">
             <div className="mx-auto max-w-4xl text-center">
@@ -37,40 +39,46 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section className="w-full">
-          <div className="container mx-auto max-w-[1400px] px-4 sm:px-6">
-            <div className="relative overflow-hidden rounded-lg">
-              <div className="aspect-[21/9] w-full">
+        {/* Image with moving overlay text */}
+        <section className="w-full py-16 md:py-24">
+          <div className="relative overflow-hidden rounded-lg w-full">
+            <div className="min-w-full overflow-hidden">
+              <div className="relative left-1/2 -translate-x-1/2 w-[1420px] h-[740px]">
                 <Image
                   src="/Bankcombination.jpg"
                   alt="City Skyline"
                   width={1920}
-                  height={1080}
-                  className="object-cover brightness-75"
+                  height={950}
+                  className="object-cover brightness-75 rounded-2xl"
                 />
-              </div>
-              <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
-                <div className="max-w-2xl">
-                  <div className="mb-4">
-                    <CircleDollarSign className="h-8 w-8 text-white" />
+
+                {/* ✅ Container to make text behave like institutional section */}
+                <div className="absolute inset-0 z-10 flex flex-col justify-end">
+                  <div className="container mx-auto px-4 sm:px-6 pb-12">
+                    <div className="max-w-2xl text-white mx-auto text-center sm:mx-0 sm:text-left">
+                      <div className="mb-4">
+                        <CircleDollarSign className="h-8 w-8 text-white" />
+                      </div>
+                      <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                        Introducing Treasury Vault
+                      </h2>
+                      <p className="text-lg text-gray-100 mb-6">
+                        Spout Finance Treasury Vault helps organizations manage
+                        their digital assets securely with institutional-grade
+                        on-chain treasury solutions.
+                      </p>
+                      <Button className="bg-emerald-600 text-white hover:bg-emerald-700">
+                        Learn More
+                      </Button>
+                    </div>
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                    Introducing Treasury Vault
-                  </h2>
-                  <p className="text-lg text-gray-100 mb-6">
-                    Spout Finance Treasury Vault helps organizations manage
-                    their digital assets securely with institutional-grade
-                    on-chain treasury solutions.
-                  </p>
-                  <Button className="bg-emerald-600 text-white hover:bg-emerald-700">
-                    Learn More
-                  </Button>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
+        {/* Features Section */}
         <section className="w-full py-16 md:py-24">
           <div className="container mx-auto max-w-[1400px] px-4 sm:px-6">
             <div className="mx-auto max-w-5xl">
@@ -125,6 +133,7 @@ export default function LandingPage() {
           </div>
         </section>
 
+        {/* Product Cards */}
         <section className="w-full py-16 md:py-24 bg-gray-50">
           <div className="container mx-auto max-w-[1400px] px-4 sm:px-6">
             <div className="mx-auto max-w-4xl text-center">
@@ -132,52 +141,37 @@ export default function LandingPage() {
                 Our Products
               </h2>
               <div className="grid gap-6 md:grid-cols-3">
-                <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                  <CircleDollarSign className="h-10 w-10 text-emerald-600 mb-4 mx-auto" />
-                  <h3 className="text-xl font-bold mb-2">Treasury Vault</h3>
-                  <p className="text-gray-600 mb-4">
-                    Secure multi-signature treasury management for digital
-                    assets.
-                  </p>
-                  <Button
-                    variant="outline"
-                    className="w-full border-emerald-600 text-emerald-600 hover:bg-emerald-50"
-                  >
-                    Explore
-                  </Button>
-                </div>
-                <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                  <CircleDollarSign className="h-10 w-10 text-emerald-600 mb-4 mx-auto" />
-                  <h3 className="text-xl font-bold mb-2">Yield Optimizer</h3>
-                  <p className="text-gray-600 mb-4">
-                    Automated strategies to maximize returns on treasury assets.
-                  </p>
-                  <Button
-                    variant="outline"
-                    className="w-full border-emerald-600 text-emerald-600 hover:bg-emerald-50"
-                  >
-                    Explore
-                  </Button>
-                </div>
-                <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                  <CircleDollarSign className="h-10 w-10 text-emerald-600 mb-4 mx-auto" />
-                  <h3 className="text-xl font-bold mb-2">Governance Portal</h3>
-                  <p className="text-gray-600 mb-4">
-                    Customizable governance frameworks for treasury operations.
-                  </p>
-                  <Button
-                    variant="outline"
-                    className="w-full border-emerald-600 text-emerald-600 hover:bg-emerald-50"
-                  >
-                    Explore
-                  </Button>
-                </div>
+                {["Treasury Vault", "Yield Optimizer", "Governance Portal"].map(
+                  (title, i) => (
+                    <div
+                      key={i}
+                      className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm"
+                    >
+                      <CircleDollarSign className="h-10 w-10 text-emerald-600 mb-4 mx-auto" />
+                      <h3 className="text-xl font-bold mb-2">{title}</h3>
+                      <p className="text-gray-600 mb-4">
+                        {title === "Treasury Vault"
+                          ? "Secure multi-signature treasury management for digital assets."
+                          : title === "Yield Optimizer"
+                          ? "Automated strategies to maximize returns on treasury assets."
+                          : "Customizable governance frameworks for treasury operations."}
+                      </p>
+                      <Button
+                        variant="outline"
+                        className="w-full border-emerald-600 text-emerald-600 hover:bg-emerald-50"
+                      >
+                        Explore
+                      </Button>
+                    </div>
+                  )
+                )}
               </div>
             </div>
           </div>
         </section>
       </main>
 
+      {/* Footer */}
       <footer className="w-full py-8 border-t border-gray-200">
         <div className="container mx-auto max-w-[1400px] px-4 sm:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
