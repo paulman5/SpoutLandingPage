@@ -11,6 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/dropdown"
+import TreasuryAnimation from "@/components/treasuryanimation"
 
 function Navigation() {
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -142,7 +143,7 @@ export default function LandingPage() {
         <section className="w-full py-16 md:py-24">
           <div className="container mx-auto max-w-[1400px] px-4 sm:px-6">
             <div className="mx-auto max-w-5xl">
-              <div className="grid gap-8 md:grid-cols-2">
+              <div className="grid gap-10 md:grid-cols-2">
                 <div>
                   <h2 className="text-3xl font-extrabold text-emerald-600 mb-6">
                     Institutional-grade treasury management
@@ -179,14 +180,8 @@ export default function LandingPage() {
                     </li>
                   </ul>
                 </div>
-                <div className="relative h-[300px] md:h-auto rounded-lg overflow-hidden shadow-lg">
-                  <Image
-                    src="/placeholder.svg?height=600&width=800"
-                    alt="Dashboard Preview"
-                    width={800}
-                    height={600}
-                    className="object-cover h-full w-full"
-                  />
+                <div className="relative h-[300px] md:h-auto rounded-lg overflow-hidden md:ml-12">
+                  <TreasuryAnimation />
                 </div>
               </div>
             </div>
