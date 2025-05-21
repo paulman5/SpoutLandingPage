@@ -99,7 +99,7 @@ export default function LandingPage() {
             <div className="min-w-full overflow-hidden">
               <div className="relative left-1/2 -translate-x-1/2 w-[1420px] h-[740px] ml-2 mr-2">
                 <Image
-                  src="/Bankcombination.jpg"
+                  src="/bankcombination.jpg"
                   alt="City Skyline"
                   width={1920}
                   height={950}
@@ -261,6 +261,12 @@ export default function LandingPage() {
                         sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover"
                         priority
+                        quality={100}
+                        onError={(e) => {
+                          console.error(`Error loading image: ${member.image}`)
+                          const target = e.target as HTMLImageElement
+                          target.src = "/placeholder.svg?height=600&width=800"
+                        }}
                       />
                     </div>
                     <h3 className="text-xl font-medium mb-2 text-gray-900">
