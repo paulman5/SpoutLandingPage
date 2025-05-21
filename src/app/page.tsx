@@ -180,7 +180,7 @@ export default function LandingPage() {
                     </li>
                   </ul>
                 </div>
-                <div className="relative h-[300px] md:h-auto rounded-lg overflow-hidden md:ml-12">
+                <div className="relative h-[300px] md:h-auto rounded-lg md:overflow-hidden md:ml-12">
                   <TreasuryAnimation />
                 </div>
               </div>
@@ -189,7 +189,7 @@ export default function LandingPage() {
         </section>
 
         {/* Product Cards */}
-        <section className="w-full py-16 md:py-24 bg-gray-50">
+        <section className="w-full py-24 md:py-32 bg-gray-50 mt-20 md:mt-0">
           <div className="container mx-auto max-w-[1400px] px-4 sm:px-6">
             <div className="mx-auto max-w-4xl text-center">
               <h2 className="text-3xl font-extrabold text-emerald-600 mb-8">
