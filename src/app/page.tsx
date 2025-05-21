@@ -99,7 +99,7 @@ export default function LandingPage() {
             <div className="min-w-full overflow-hidden">
               <div className="relative left-1/2 -translate-x-1/2 w-[1420px] h-[740px] ml-2 mr-2">
                 <Image
-                  src="/bankcombination.jpg"
+                  src="/Bankcombination.jpg"
                   alt="City Skyline"
                   width={1920}
                   height={950}
@@ -244,7 +244,7 @@ export default function LandingPage() {
                     role: "CEO",
                     description:
                       "Former tech investment banker at HSBC, covering fintech and software.  Founder of FlipVault, a web3 bartering platform. Angel investor in several blockchain AI companies, including Theoriq, PIN AI, and GAIB AI",
-                    image: "/headshotmarc.jpg",
+                    image: "/Headshotmarc.jpg",
                     linkedin: "https://www.linkedin.com/in/marc-ryan/",
                   },
                   {
@@ -252,7 +252,7 @@ export default function LandingPage() {
                     role: "CTO",
                     description:
                       "Serial hackathon grand prize winner and solutions architect for privacy and payments applications. Co-founded the first privacy protocol on Starknet.",
-                    image: "/headshotpaul.jpg",
+                    image: "/Headshotpaul.jpg",
                     linkedin:
                       "https://www.linkedin.com/in/paul-van-mierlo-063b9417a/",
                   },
