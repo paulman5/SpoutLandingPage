@@ -261,7 +261,7 @@ export default function LandingPage() {
                     image: "/HeadshotPJ.png",
                     linkedin:
                       "https://www.linkedin.com/in/paul-jan-reijn-70b635227/",
-                    email: "@spout.finance",
+                    email: "pauljan@spout.finance",
                   },
                 ].map((member, i) => (
                   <div key={i} className="bg-white p-8 flex flex-col h-full">
