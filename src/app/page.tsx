@@ -232,7 +232,7 @@ export default function LandingPage() {
               <h2 className="text-3xl font-extrabold text-emerald-600 mb-8">
                 Our Team
               </h2>
-              <div className="grid gap-12 md:grid-cols-2">
+              <div className="grid gap-8 md:grid-cols-3">
                 {[
                   {
                     name: "Marc Ryan",
@@ -264,13 +264,13 @@ export default function LandingPage() {
                     email: "pauljan@spout.finance",
                   },
                 ].map((member, i) => (
-                  <div key={i} className="bg-white p-8 flex flex-col h-full">
-                    <div className="w-full h-[600px] relative mb-6 rounded-lg overflow-hidden">
+                  <div key={i} className="bg-white p-6 flex flex-col h-full">
+                    <div className="w-full h-[450px] md:h-[300px] relative mb-4 rounded-lg overflow-hidden">
                       <Image
                         src={member.image}
                         alt={`${member.name} headshot`}
-                        width={1200}
-                        height={800}
+                        width={800}
+                        height={600}
                         style={{
                           width: "100%",
                           height: "100%",
@@ -282,13 +282,13 @@ export default function LandingPage() {
                       />
                     </div>
                     <div className="flex flex-col flex-grow">
-                      <h3 className="text-xl font-medium mb-2 text-gray-900">
+                      <h3 className="text-lg font-medium mb-1 text-gray-900">
                         {member.name}
                       </h3>
-                      <p className="text-emerald-600 font-medium mb-2 text-base">
+                      <p className="text-emerald-600 font-medium mb-2 text-sm">
                         {member.role}
                       </p>
-                      <p className="text-gray-600 font-normal text-base leading-relaxed mb-4 flex-grow">
+                      <p className="text-gray-600 font-normal text-sm leading-relaxed mb-4 flex-grow">
                         {member.description}
                       </p>
                       <div className="flex items-center gap-4 mt-auto">
