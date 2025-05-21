@@ -104,6 +104,7 @@ export default function LandingPage() {
                   width={1920}
                   height={950}
                   className="object-cover brightness-75 rounded-2xl"
+                  priority
                 />
 
                 {/* ✅ Container to make text behave like institutional section */}
@@ -257,6 +258,7 @@ export default function LandingPage() {
                         src={member.image}
                         alt={`${member.name} headshot`}
                         fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover"
                         priority
                       />
