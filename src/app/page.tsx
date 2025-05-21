@@ -1,7 +1,57 @@
+"use client"
 import Link from "next/link"
 import Image from "next/image"
 import { CircleDollarSign } from "lucide-react"
 import { Button } from "@/components/button"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/dropdown"
+
+function Navigation() {
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    const href = e.currentTarget.href
+    const targetId = href.replace(/.*\#/, "")
+    const elem = document.getElementById(targetId)
+    if (elem) {
+      elem.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      })
+    }
+  }
+
+  return (
+    <nav className="hidden md:flex gap-8">
+      <DropdownMenu>
+        <DropdownMenuTrigger className="text-sm font-semibold text-gray-600 hover:text-gray-900">
+          Products
+        </DropdownMenuTrigger>
+        <DropdownMenuContent>
+          <DropdownMenuLabel>Our Products</DropdownMenuLabel>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem>
+            <Link href="#" className="w-full">
+              USCB
+            </Link>
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
+      <Link
+        href="#about"
+        onClick={scrollToSection}
+        className="text-sm font-semibold text-gray-600 hover:text-gray-900"
+      >
+        About
+      </Link>
+    </nav>
+  )
+}
 
 export default function LandingPage() {
   return (
@@ -20,20 +70,7 @@ export default function LandingPage() {
               </Link>
             </div>
             <div className="flex items-center gap-8">
-              <nav className="hidden md:flex gap-8">
-                <Link
-                  href="#"
-                  className="text-sm font-semibold text-gray-600 hover:text-gray-900"
-                >
-                  Products
-                </Link>
-                <Link
-                  href="#"
-                  className="text-sm font-semibold text-gray-600 hover:text-gray-900"
-                >
-                  About
-                </Link>
-              </nav>
+              <Navigation />
             </div>
           </div>
         </div>
@@ -87,7 +124,7 @@ export default function LandingPage() {
                         <br className="sm:hidden" /> with institutional-grade
                         on-chain treasury solutions.
                       </p>
-                      <Button className="bg-emerald-600 text-white hover:bg-emerald-700 text-sm sm:text-base">
+                      <Button className="bg-emerald-600 text-white hover:bg-emerald-700 text-sm sm:text-base cursor-pointer">
                         Learn More
                       </Button>
                     </div>
@@ -185,6 +222,55 @@ export default function LandingPage() {
                     </div>
                   )
                 )}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* About/Team Section */}
+        <section id="about" className="w-full py-16 md:py-24">
+          <div className="container mx-auto max-w-[1400px] px-4 sm:px-6">
+            <div className="mx-auto max-w-6xl text-center">
+              <h2 className="text-3xl font-extrabold text-emerald-600 mb-8">
+                Our Team
+              </h2>
+              <div className="grid gap-12 md:grid-cols-2">
+                {[
+                  {
+                    name: "Marc Ryan",
+                    role: "CEO",
+                    description: "",
+                    image: "/placeholder.svg?height=600&width=800",
+                  },
+                  {
+                    name: "Paul van Mierlo",
+                    role: "CTO",
+                    description:
+                      "Serial hackathon grand prize winner and solutions architect for privacy and payments applications.",
+                    image: "/headshotpaul.jpg",
+                  },
+                ].map((member, i) => (
+                  <div key={i} className="bg-white p-8">
+                    <div className="w-full h-[600px] relative mb-6 rounded-lg overflow-hidden">
+                      <Image
+                        src={member.image}
+                        alt={`${member.name} headshot`}
+                        fill
+                        className="object-cover"
+                        priority
+                      />
+                    </div>
+                    <h3 className="text-xl font-medium mb-2 text-gray-900">
+                      {member.name}
+                    </h3>
+                    <p className="text-emerald-600 font-medium mb-2 text-base">
+                      {member.role}
+                    </p>
+                    <p className="text-gray-600 font-normal text-base leading-relaxed">
+                      {member.description}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
