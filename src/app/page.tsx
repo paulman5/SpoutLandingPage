@@ -238,7 +238,7 @@ export default function LandingPage() {
                     name: "Marc Ryan",
                     role: "CEO",
                     description:
-                      "Former tech investment banker at HSBC, covering fintech and software.  Founder of FlipVault, a web3 bartering platform. Angel investor in several blockchain AI companies, including Theoriq, PIN AI, and GAIB AI",
+                      "Former tech investment banker at HSBC, covering fintech and software.  Founder of FlipVault, a web3 bartering platform. Angel investor in several blockchain AI companies, including Theoriq, PIN AI, and GAIB AI.",
                     image: "/HeadshotMarc.png",
                     linkedin: "https://www.linkedin.com/in/marc-ryan/",
                     email: "marc@spout.finance",
@@ -291,7 +291,7 @@ export default function LandingPage() {
                       <p className="text-gray-600 font-normal text-sm leading-relaxed mb-4 flex-grow">
                         {member.description}
                       </p>
-                      <div className="flex items-center gap-4 mt-auto">
+                      <div className="flex items-center justify-center gap-4 mt-auto">
                         <Link
                           href={member.linkedin}
                           target="_blank"
