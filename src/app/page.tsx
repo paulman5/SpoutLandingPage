@@ -262,11 +262,6 @@ export default function LandingPage() {
                         className="w-full h-full object-cover"
                         priority
                         quality={100}
-                        onError={(e) => {
-                          console.error(`Error loading image: ${member.image}`)
-                          const target = e.target as HTMLImageElement
-                          target.src = "/placeholder.svg?height=600&width=800"
-                        }}
                       />
                     </div>
                     <h3 className="text-xl font-medium mb-2 text-gray-900">
