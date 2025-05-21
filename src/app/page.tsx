@@ -253,6 +253,16 @@ export default function LandingPage() {
                       "https://www.linkedin.com/in/paul-van-mierlo-063b9417a/",
                     email: "paul@spout.finance",
                   },
+                  {
+                    name: "Paul Jan Reijn",
+                    role: "CLO",
+                    description:
+                      "Legal counsel with years of experience in software. Architect of the legal framework for various succesful software products, such as payments and factory automation.",
+                    image: "/HeadshotPJ.png",
+                    linkedin:
+                      "https://www.linkedin.com/in/paul-jan-reijn-70b635227/",
+                    email: "@spout.finance",
+                  },
                 ].map((member, i) => (
                   <div key={i} className="bg-white p-8 flex flex-col h-full">
                     <div className="w-full h-[600px] relative mb-6 rounded-lg overflow-hidden">
