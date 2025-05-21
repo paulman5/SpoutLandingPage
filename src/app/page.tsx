@@ -298,11 +298,11 @@ export default function LandingPage() {
                           </svg>
                         </Link>
                         <a
-                          href={`mailto:${member.email}`}
+                          href="mailto:contact@spout.finance"
                           className="text-emerald-600"
                           onClick={(e) => {
                             e.preventDefault()
-                            window.open(`mailto:${member.email}`, "_self")
+                            window.open("mailto:contact@spout.finance", "_self")
                           }}
                         >
                           <svg
