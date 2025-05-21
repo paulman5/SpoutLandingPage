@@ -53,21 +53,24 @@ export default function LandingPage() {
                 />
 
                 {/* ✅ Container to make text behave like institutional section */}
-                <div className="absolute inset-0 z-10 flex flex-col justify-end">
+                <div className="absolute inset-0 z-10 flex flex-col justify-center sm:justify-end">
                   <div className="container mx-auto px-4 sm:px-6 pb-12">
-                    <div className="max-w-2xl text-white mx-auto text-center sm:mx-0 sm:text-left">
+                    <div className="w-[90%] sm:w-[80%] md:max-w-2xl text-white mx-auto text-center flex flex-col items-center sm:items-start sm:mx-0 sm:text-left">
                       <div className="mb-4">
                         <CircleDollarSign className="h-8 w-8 text-white" />
                       </div>
-                      <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                        Introducing Treasury Vault
+                      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4">
+                        Introducing
+                        <br className="sm:hidden" /> Treasury Vault
                       </h2>
-                      <p className="text-lg text-gray-100 mb-6">
-                        Spout Finance Treasury Vault helps organizations manage
-                        their digital assets securely with institutional-grade
+                      <p className="text-base sm:text-lg text-gray-100 mb-6">
+                        Spout Finance Treasury Vault helps
+                        <br className="sm:hidden" /> organizations manage their
+                        digital assets securely
+                        <br className="sm:hidden" /> with institutional-grade
                         on-chain treasury solutions.
                       </p>
-                      <Button className="bg-emerald-600 text-white hover:bg-emerald-700">
+                      <Button className="bg-emerald-600 text-white hover:bg-emerald-700 text-sm sm:text-base">
                         Learn More
                       </Button>
                     </div>
