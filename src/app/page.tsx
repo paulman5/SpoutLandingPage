@@ -257,9 +257,9 @@ export default function LandingPage() {
                       <Image
                         src={member.image}
                         alt={`${member.name} headshot`}
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-cover"
+                        width={800}
+                        height={600}
+                        className="w-full h-full object-cover"
                         priority
                         quality={100}
                         onError={(e) => {
