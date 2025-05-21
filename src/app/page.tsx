@@ -257,9 +257,13 @@ export default function LandingPage() {
                       <Image
                         src={member.image}
                         alt={`${member.name} headshot`}
-                        width={800}
-                        height={600}
-                        className="w-full h-full object-cover"
+                        width={1200}
+                        height={800}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                        }}
                         priority
                         quality={100}
                       />
