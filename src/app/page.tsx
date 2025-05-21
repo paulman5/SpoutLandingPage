@@ -12,7 +12,7 @@ export default function LandingPage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <CircleDollarSign className="h-6 w-6 text-emerald-600" />
-              <span className="text-xl font-bold">Spout Finance</span>
+              <span className="text-xl font-bold">Spout</span>
             </div>
             <div className="flex items-center gap-8">
               <nav className="hidden md:flex gap-8"></nav>
@@ -28,7 +28,7 @@ export default function LandingPage() {
           <div className="container mx-auto max-w-[1400px] px-4 sm:px-6">
             <div className="mx-auto max-w-4xl text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-emerald-600 mb-6">
-                Spout Finance is transforming on-chain treasury management
+                Spout is transforming on-chain treasury management
               </h1>
               <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
                 We provide secure, efficient solutions for organizations to
@@ -43,7 +43,7 @@ export default function LandingPage() {
         <section className="w-full py-16 md:py-24">
           <div className="relative overflow-hidden rounded-lg w-full">
             <div className="min-w-full overflow-hidden">
-              <div className="relative left-1/2 -translate-x-1/2 w-[1420px] h-[740px]">
+              <div className="relative left-1/2 -translate-x-1/2 w-[1420px] h-[740px] ml-2 mr-2">
                 <Image
                   src="/Bankcombination.jpg"
                   alt="City Skyline"
@@ -64,7 +64,7 @@ export default function LandingPage() {
                         <br className="sm:hidden" /> Treasury Vault
                       </h2>
                       <p className="text-base sm:text-lg text-gray-100 mb-6">
-                        Spout Finance Treasury Vault helps
+                        Spout Treasury Vault helps
                         <br className="sm:hidden" /> organizations manage their
                         digital assets securely
                         <br className="sm:hidden" /> with institutional-grade
@@ -91,7 +91,7 @@ export default function LandingPage() {
                     Institutional-grade treasury management
                   </h2>
                   <p className="text-gray-600 mb-6">
-                    Spout Finance provides a comprehensive suite of tools for
+                    Spout provides a comprehensive suite of tools for
                     organizations to manage their digital assets with security,
                     compliance, and efficiency.
                   </p>
@@ -180,7 +180,7 @@ export default function LandingPage() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-2">
               <CircleDollarSign className="h-5 w-5 text-emerald-600" />
-              <span className="text-sm font-medium">Spout Finance</span>
+              <span className="text-sm font-medium">Spout</span>
             </div>
             <div className="flex gap-6">
               <Link
