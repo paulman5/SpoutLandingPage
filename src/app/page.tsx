@@ -147,8 +147,8 @@ export default function LandingPage() {
                   </h2>
                   <p className="text-gray-600 font-semibold mb-6">
                     Spout provides a comprehensive suite of tools for
-                    organizations to manage their digital assets with security,
-                    compliance, and efficiency.
+                    organizations to manage their Real World Assets with
+                    security, compliance, and efficiency.
                   </p>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
@@ -164,7 +164,7 @@ export default function LandingPage() {
                         <CircleDollarSign className="h-4 w-4 text-emerald-600" />
                       </div>
                       <span className="text-gray-700 font-semibold">
-                        Transparent on-chain operations
+                        Interoperable with any on-chain DeFi protocol
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
@@ -172,7 +172,7 @@ export default function LandingPage() {
                         <CircleDollarSign className="h-4 w-4 text-emerald-600" />
                       </div>
                       <span className="text-gray-700 font-semibold">
-                        Automated yield optimization
+                        Off-chain collateral proofs
                       </span>
                     </li>
                   </ul>
