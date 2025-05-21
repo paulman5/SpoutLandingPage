@@ -105,6 +105,8 @@ export default function LandingPage() {
                   height={950}
                   className="object-cover brightness-75 rounded-2xl"
                   priority
+                  quality={100}
+                  unoptimized={false}
                 />
 
                 {/* ✅ Container to make text behave like institutional section */}
@@ -269,6 +271,7 @@ export default function LandingPage() {
                         }}
                         priority
                         quality={100}
+                        unoptimized={false}
                       />
                     </div>
                     <div className="flex flex-col flex-grow">
