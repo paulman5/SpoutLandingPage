@@ -87,7 +87,7 @@ export default function LandingPage() {
               </h1>
               <p className="text-xl font-semibold text-gray-600 mb-12 max-w-3xl mx-auto">
                 We provide secure, efficient solutions for organizations to
-                manage digital assets through transparent on-chain treasury
+                manage Real World Assets through transparent on-chain treasury
                 operations.
               </p>
             </div>
