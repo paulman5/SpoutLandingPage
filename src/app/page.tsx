@@ -239,7 +239,7 @@ export default function LandingPage() {
                     role: "CEO",
                     description:
                       "Former tech investment banker at HSBC, covering fintech and software.  Founder of FlipVault, a web3 bartering platform. Angel investor in several blockchain AI companies, including Theoriq, PIN AI, and GAIB AI",
-                    image: "/HeadshotMarc.jpg",
+                    image: "/HeadshotMarc.png",
                     linkedin: "https://www.linkedin.com/in/marc-ryan/",
                     email: "marc@spout.finance",
                   },
@@ -248,7 +248,7 @@ export default function LandingPage() {
                     role: "CTO",
                     description:
                       "Serial hackathon grand prize winner and solutions architect for privacy and payments applications. Co-founded the first privacy protocol on Starknet.",
-                    image: "/HeadshotPaul.jpg",
+                    image: "/HeadshotPaul.png",
                     linkedin:
                       "https://www.linkedin.com/in/paul-van-mierlo-063b9417a/",
                     email: "paul@spout.finance",
