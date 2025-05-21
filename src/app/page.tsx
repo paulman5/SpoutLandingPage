@@ -247,7 +247,7 @@ export default function LandingPage() {
                     name: "Paul van Mierlo",
                     role: "CTO",
                     description:
-                      "Serial hackathon grand prize winner and solutions architect for privacy and payments applications.",
+                      "Serial hackathon grand prize winner and solutions architect for privacy and payments applications. Co-founded the first privacy protocol on Starknet. ",
                     image: "/headshotpaul.jpg",
                   },
                 ].map((member, i) => (
