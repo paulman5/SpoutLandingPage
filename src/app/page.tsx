@@ -106,7 +106,7 @@ export default function LandingPage() {
                   className="object-cover brightness-75 rounded-2xl"
                   priority
                   quality={100}
-                  unoptimized={false}
+                  unoptimized
                 />
 
                 {/* ✅ Container to make text behave like institutional section */}
