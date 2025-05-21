@@ -239,8 +239,9 @@ export default function LandingPage() {
                   {
                     name: "Marc Ryan",
                     role: "CEO",
-                    description: "",
-                    image: "/placeholder.svg?height=600&width=800",
+                    description:
+                      "Former tech investment banker at HSBC, covering fintech and software.  Founder of FlipVault, a web3 bartering platform. Angel investor in several blockchain AI companies, including Theoriq, PIN AI, and GAIB AI",
+                    image: "/headshotmarc.jpg",
                   },
                   {
                     name: "Paul van Mierlo",
