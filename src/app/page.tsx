@@ -248,7 +248,7 @@ export default function LandingPage() {
                     role: "CTO",
                     description:
                       "Serial hackathon grand prize winner and solutions architect for privacy and payments applications. Co-founded the first privacy protocol on Starknet.",
-                    image: "/HeadshotPaul.png",
+                    image: "/HeadshotPaul.jpg",
                     linkedin:
                       "https://www.linkedin.com/in/paul-van-mierlo-063b9417a/",
                     email: "paul@spout.finance",
