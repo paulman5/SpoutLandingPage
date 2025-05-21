@@ -12,7 +12,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/dropdown"
 import TreasuryAnimation from "@/components/treasuryanimation"
-
+import ProductOverview from "@/components/overview"
 function Navigation() {
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
@@ -191,37 +191,7 @@ export default function LandingPage() {
         {/* Product Cards */}
         <section className="w-full py-24 md:py-32 bg-gray-50 mt-20 md:mt-0">
           <div className="container mx-auto max-w-[1400px] px-4 sm:px-6">
-            <div className="mx-auto max-w-4xl text-center">
-              <h2 className="text-3xl font-extrabold text-emerald-600 mb-8">
-                Our Products
-              </h2>
-              <div className="grid gap-6 md:grid-cols-3">
-                {["Treasury Vault", "Yield Optimizer", "Governance Portal"].map(
-                  (title, i) => (
-                    <div
-                      key={i}
-                      className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm"
-                    >
-                      <CircleDollarSign className="h-10 w-10 text-emerald-600 mb-4 mx-auto" />
-                      <h3 className="text-xl font-extrabold mb-2">{title}</h3>
-                      <p className="text-gray-600 font-semibold mb-4">
-                        {title === "Treasury Vault"
-                          ? "Secure multi-signature treasury management for digital assets."
-                          : title === "Yield Optimizer"
-                          ? "Automated strategies to maximize returns on treasury assets."
-                          : "Customizable governance frameworks for treasury operations."}
-                      </p>
-                      <Button
-                        variant="outline"
-                        className="w-full border-emerald-600 text-emerald-600 hover:bg-emerald-50 font-semibold"
-                      >
-                        Explore
-                      </Button>
-                    </div>
-                  )
-                )}
-              </div>
-            </div>
+            <ProductOverview />
           </div>
         </section>
 
