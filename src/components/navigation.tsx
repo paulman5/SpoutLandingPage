@@ -25,21 +25,25 @@ export default function Navigation() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-[100] ${
-        !isLearnPage ? "bg-white" : ""
+      className={`relative z-[999] ${
+        isLearnPage ? "bg-transparent" : "bg-white"
       }`}
     >
-      <nav className="container mx-auto max-w-[1400px] px-4 sm:px-6">
+      <nav
+        className={`container mx-auto max-w-[1400px] px-4 sm:px-6 ${
+          isLearnPage ? "bg-transparent" : ""
+        }`}
+      >
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center space-x-2">
             <CircleDollarSign
               className={`h-8 w-8 ${
-                isLearnPage ? "text-white" : "text-emerald-600"
+                isLearnPage ? "text-white drop-shadow-lg" : "text-emerald-600"
               }`}
             />
             <span
               className={`text-xl font-bold ${
-                isLearnPage ? "text-white" : "text-gray-900"
+                isLearnPage ? "text-white drop-shadow-lg" : "text-gray-900"
               }`}
             >
               Spout
@@ -51,7 +55,7 @@ export default function Navigation() {
               <DropdownMenuTrigger
                 className={`${
                   isLearnPage
-                    ? "text-white hover:text-emerald-400"
+                    ? "text-white drop-shadow-lg hover:text-emerald-400"
                     : "text-gray-600 hover:text-emerald-600"
                 } transition-colors`}
               >
