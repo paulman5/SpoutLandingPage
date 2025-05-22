@@ -77,7 +77,7 @@ export default function LandingPage() {
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-500px" }}
+        viewport={{ once: true }}
         transition={{ duration: 0.5 }}
         className="w-full py-16 md:pt-32 md:pb-8"
       >
