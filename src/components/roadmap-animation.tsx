@@ -199,31 +199,6 @@ export default function RoadmapAnimation() {
         </motion.div>
 
         {/* Connecting lines (optional) */}
-        <svg
-          className="absolute inset-0 w-full h-full pointer-events-none"
-          viewBox="0 0 400 400"
-        >
-          <motion.path
-            d="M 100,100 C 150,150 250,150 300,100"
-            stroke="#e2e8f0"
-            strokeWidth="2"
-            strokeDasharray="6,6"
-            fill="none"
-            initial={{ pathLength: 0 }}
-            animate={{ pathLength: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
-          />
-          <motion.path
-            d="M 100,300 C 150,250 250,250 300,300"
-            stroke="#e2e8f0"
-            strokeWidth="2"
-            strokeDasharray="6,6"
-            fill="none"
-            initial={{ pathLength: 0 }}
-            animate={{ pathLength: 1 }}
-            transition={{ duration: 1, delay: 0.7 }}
-          />
-        </svg>
       </motion.div>
     </div>
   )

@@ -8,7 +8,6 @@ import {
   Lock,
   ChevronRight,
   Layers,
-  Briefcase,
   Building2,
   Building2Icon as BuildingOffice2,
   Factory,
@@ -281,20 +280,6 @@ export default function LearnPage() {
             <div className="order-2 md:order-1">
               <div className="aspect-square max-w-md mx-auto bg-white rounded-2xl shadow-lg p-8 flex items-center justify-center">
                 <div className="relative w-full h-full">
-                  {/* DeFi Flow */}
-                  <div className="absolute top-0 left-0 w-32 h-32 bg-blue-50 rounded-xl shadow-md flex flex-col items-center justify-center">
-                    <Layers className="h-10 w-10 text-blue-600 mb-2" />
-                    <div className="text-sm font-medium text-slate-700 text-center">
-                      DeFi Flow
-                    </div>
-                  </div>
-                  {/* TradFi Discretion */}
-                  <div className="absolute bottom-0 right-0 w-32 h-32 bg-slate-50 rounded-xl shadow-md flex flex-col items-center justify-center">
-                    <Briefcase className="h-10 w-10 text-slate-600 mb-2" />
-                    <div className="text-sm font-medium text-slate-700 text-center">
-                      TradFi Discretion
-                    </div>
-                  </div>
                   {/* Privacy Shield */}
                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-gradient-to-br from-slate-800 to-slate-900 rounded-full shadow-lg flex items-center justify-center">
                     <div className="text-center">
