@@ -2,7 +2,6 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { CircleDollarSign } from "lucide-react"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,6 +10,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/dropdown"
+import Image from "next/image"
 
 export default function Navigation() {
   const pathname = usePathname()
@@ -36,18 +36,7 @@ export default function Navigation() {
       >
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center space-x-2">
-            <CircleDollarSign
-              className={`h-8 w-8 ${
-                isLearnPage ? "text-white drop-shadow-lg" : "text-emerald-600"
-              }`}
-            />
-            <span
-              className={`text-xl font-bold ${
-                isLearnPage ? "text-white drop-shadow-lg" : "text-gray-900"
-              }`}
-            >
-              Spout
-            </span>
+            <Image src="/Spout.png" alt="Spout Logo" width={200} height={150} />
           </Link>
 
           <div className="flex items-center space-x-8">
