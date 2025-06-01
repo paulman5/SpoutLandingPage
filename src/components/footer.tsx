@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { CircleDollarSign } from "lucide-react"
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -7,12 +7,16 @@ export default function Footer() {
       <div className="container mx-auto max-w-[1400px] px-4 sm:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <CircleDollarSign className="h-5 w-5 text-emerald-600" />
             <Link
               href="/"
               className="text-sm font-medium hover:text-emerald-600 transition-colors"
             >
-              Spout
+              <Image
+                src="/Spout.png"
+                alt="Spout Logo"
+                width={150}
+                height={150}
+              />
             </Link>
           </div>
           <div className="flex gap-6">
