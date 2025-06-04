@@ -36,12 +36,12 @@ export default function LearnPage() {
         <div className="container mx-auto max-w-[1400px] px-4 sm:px-6 relative h-full flex items-center">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter text-white mb-6">
-              Our Vision for On-Chain Treasury Management
+              Our Vision for On-Chain Treasury Solutions{" "}
             </h1>
             <p className="text-xl font-semibold text-white/90 mb-12">
-              Transforming how organizations manage their Real World Assets
-              through transparent, secure, and privacy-preserving on-chain
-              solutions.
+              Transforming how organizations manage their on-chain reserves
+              through, transparent, secure, and privacy-preserving on-chain
+              solutions
             </p>
           </div>
         </div>

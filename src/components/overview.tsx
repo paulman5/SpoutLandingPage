@@ -21,7 +21,7 @@ const features = [
     id: "backed",
     title: "Fully Backed by AAA-Rated ETFs",
     description:
-      "Each token is backed 1:1 by investment-grade bond ETFs like LQD or VCIT, held by a qualified U.S. custodian",
+      "Each token is backed 1:1 by investment-grade bond ETFs like LQD, held by a qualified U.S. custodian",
     icon: <Shield className="h-6 w-6" />,
     color: "bg-blue-500",
     lightColor: "bg-blue-100",
@@ -78,7 +78,7 @@ export default function ProductOverview() {
             Bridging Traditional Finance & Digital Assets
           </h2>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            Spout provides institutional-grade treasury management for
+            Spout provides institutional-grade treasury solutions for
             organizations operating in global financial markets.
           </p>
         </div>

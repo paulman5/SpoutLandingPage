@@ -15,12 +15,11 @@ export default function LandingPage() {
         <div className="container mx-auto max-w-[1400px] px-4 sm:px-6">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter text-emerald-600 mb-6">
-              Spout is transforming on-chain treasury management
+              Spout is bringing real-world yield on-chain{" "}
             </h1>
             <p className="text-xl font-semibold text-gray-600 mb-12 max-w-3xl mx-auto">
-              We provide secure, efficient solutions for organizations to manage
-              Real World Assets through transparent on-chain treasury
-              operations.
+              Tokenized U.S. corporate bond ETFs, built with institutional-grade
+              privacy and seamless access
             </p>
           </div>
         </div>
@@ -47,15 +46,15 @@ export default function LandingPage() {
                 <div className="container mx-auto px-4 sm:px-6 pb-12">
                   <div className="w-[90%] sm:w-[80%] md:max-w-2xl text-white mx-auto text-center flex flex-col items-center sm:items-start sm:mx-0 sm:text-left">
                     <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white mb-4">
-                      Introducing
-                      <br className="sm:hidden" /> Treasury Vault
+                      Introducing SUSC
+                      {/* <br className="sm:hidden" /> Treasury Vault */}
                     </h2>
                     <p className="text-base sm:text-lg font-semibold text-gray-100 mb-6">
-                      Spout Treasury Vault helps
-                      <br className="sm:hidden" /> organizations manage their
-                      Real World Assets securely
-                      <br className="sm:hidden" /> with institutional-grade
-                      on-chain treasury solutions.
+                      SUSC is a tokenized version of the LQD,
+                      <br className="sm:hidden" /> a diversified portfolio of
+                      AAA - BBB-rated U.S.
+                      <br className="sm:hidden" /> corporate bonds and one of
+                      the most liquid bond ETFs in the world
                     </p>
                     <Link href="/learn">
                       <Button className="bg-emerald-600 text-white hover:bg-emerald-700 text-sm sm:text-base cursor-pointer">
@@ -83,12 +82,11 @@ export default function LandingPage() {
             <div className="grid gap-10 md:grid-cols-2">
               <div>
                 <h2 className="text-3xl font-extrabold text-emerald-600 mb-6">
-                  Institutional-grade treasury management
+                  Tokenized institutional-grade investment products{" "}
                 </h2>
                 <p className="text-gray-600 font-semibold mb-6">
-                  Spout provides a comprehensive suite of tools for
-                  organizations to manage their Real World Assets with security,
-                  compliance, and efficiency.
+                  Spout provides an array of tokenized high-grade real-world
+                  investment products, beginning with the LQD.
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
