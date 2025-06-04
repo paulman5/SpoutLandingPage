@@ -35,10 +35,25 @@ export default function Navigation() {
         }`}
       >
         <div className="flex items-center justify-between h-20">
-          <Link href="/" className="flex items-center space-x-2">
-            <Image src="/Spout.png" alt="Spout Logo" width={200} height={150} />
-          </Link>
-
+          {isLearnPage ? (
+            <Link href="/" className="flex items-center space-x-2">
+              <Image
+                src="/Spoutwhite.png"
+                alt="Spout Logo"
+                width={140}
+                height={150}
+              />
+            </Link>
+          ) : (
+            <Link href="/" className="flex items-center space-x-2">
+              <Image
+                src="/Spout.png"
+                alt="Spout Logo"
+                width={200}
+                height={150}
+              />
+            </Link>
+          )}
           <div className="flex items-center space-x-8">
             <Link
               href="https://spout.gitbook.io/spout"
