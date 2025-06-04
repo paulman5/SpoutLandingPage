@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Spout Finance",
   description: "Transforming on-chain treasury management",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/whale.png",
   },
 }
 
