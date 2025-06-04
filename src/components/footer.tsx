@@ -48,7 +48,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-4">
               <Link
-                href="https://twitter.com/spoutfinance"
+                href="https://x.com/0xspout"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-gray-900 transition-colors"
