@@ -40,13 +40,25 @@ export default function Navigation() {
           </Link>
 
           <div className="flex items-center space-x-8">
+            <Link
+              href="https://spout.gitbook.io/spout"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${
+                isLearnPage
+                  ? "text-white drop-shadow-lg hover:text-emerald-400"
+                  : "text-gray-600 hover:text-emerald-600"
+              } transition-colors text-base cursor-pointer`}
+            >
+              docs
+            </Link>
             <DropdownMenu>
               <DropdownMenuTrigger
                 className={`${
                   isLearnPage
                     ? "text-white drop-shadow-lg hover:text-emerald-400"
                     : "text-gray-600 hover:text-emerald-600"
-                } transition-colors`}
+                } transition-colors text-base cursor-pointer`}
               >
                 Products
               </DropdownMenuTrigger>
@@ -55,7 +67,7 @@ export default function Navigation() {
                 <DropdownMenuSeparator />
                 <DropdownMenuItem>
                   <Link href="#" className="w-full">
-                    USCB
+                    SUSC
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -72,7 +84,7 @@ export default function Navigation() {
                   isLearnPage
                     ? "text-white hover:text-emerald-400"
                     : "text-gray-600 hover:text-emerald-600"
-                } transition-colors`}
+                } transition-colors text-base cursor-pointer`}
               >
                 About
               </Link>
