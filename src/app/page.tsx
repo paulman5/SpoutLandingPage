@@ -54,7 +54,8 @@ export default function LandingPage() {
                       <br className="sm:hidden" /> a diversified portfolio of
                       AAA - BBB-rated U.S.
                       <br className="sm:hidden" /> corporate bonds and one of
-                      the most liquid bond ETFs in the world
+                      the most <br className="sm:hidden" />
+                      liquid bond ETFs in the world
                     </p>
                     <Link href="/learn">
                       <Button className="bg-emerald-600 text-white hover:bg-emerald-700 text-sm sm:text-base cursor-pointer">
